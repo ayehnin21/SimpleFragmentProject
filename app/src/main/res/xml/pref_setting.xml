@@ -8,8 +8,8 @@
             android:textColor="#FFF"
             android:title="Title you can write here that you want">
         <EditTextPreference
-                android:defaultValue="2001"
-                android:key="cd_key"
+                android:defaultValue="Default value"
+                android:key="key1"
                 android:maxLines="1"
                 android:selectAllOnFocus="true"
                 android:singleLine="true"
@@ -17,8 +17,8 @@
                 android:title="this is the title"/>
 
         <EditTextPreference
-                android:defaultValue="your sever ip "
-                android:key="IP"
+                android:defaultValue="Default Value "
+                android:key="key2"
                 android:maxLines="1"
                 android:selectAllOnFocus="true"
                 android:singleLine="true"
