@@ -20,20 +20,29 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, SettingActivity::class.java)
             startActivity(intent)
         }
-      val fm=supportFragmentManager
-        fm.beginTransaction().add(R.id.fragLinear,FragOne(),"frag_one").commit()
+        val fm = supportFragmentManager
+        fm.beginTransaction().add(R.id.fragLinear, FragOne(), "frag_one").commit()
         btnGetPref.setOnClickListener {
-            btnGetPref.startAnimation(AnimationUtils.loadAnimation(this@MainActivity,R.anim.rotate))
+            btnGetPref.startAnimation(
+                AnimationUtils.loadAnimation(
+                    this@MainActivity,
+                    R.anim.rotate
+                )
+            )//this is used for animation (rotate animation)
 
             var key1 = getPrefValue(this@MainActivity, "key1")
             var key2 = getPrefValue(this@MainActivity, "key2")
-            Log.d("my_message", "cd_firm is $key1 and ip is $key2 and sub1 is" )
-        Toast.makeText(this@MainActivity,"key one is $key1 and key two is $key2",Toast.LENGTH_LONG).show()
+            Log.d("my_message", "key one  is $key1 and key two is $key2 ")
+            Toast.makeText(
+                this@MainActivity,
+                "key one is $key1 and key two is $key2",
+                Toast.LENGTH_LONG
+            ).show()
         }
 
     }
 
-    fun getPrefValue(context: Context, key: String): String {
+    private fun getPrefValue(context: Context, key: String): String {
         val mySharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)
         return mySharedPreferences.getString(key, "error").toString()
     }
