@@ -5,7 +5,7 @@
     <PreferenceCategory
             android:enabled="true"
             android:key="Company"
-            android:textColor="#FFF"
+            android:textColor="#ccccff"
             android:title="Title you can write here that you want">
         <EditTextPreference
                 android:defaultValue="Default value"

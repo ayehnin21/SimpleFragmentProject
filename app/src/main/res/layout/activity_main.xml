@@ -5,6 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/et_background"
         tools:context=".MainActivity">
 
     <ImageButton
@@ -19,18 +20,24 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp"
             app:layout_constraintHorizontal_bias="0.976"/>
+
     <Button
-            android:text="Get Prefrence Value"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/btnGetPref"
+            android:layout_width="230dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="88dp"
+            android:textColor="#F0F5F5"
+            android:layout_marginTop="40dp"
+            android:textAllCaps="false"
+            android:background="@drawable/button_back"
+            android:text="Get Prefrence Value"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/fragLinear"/>
+            app:layout_constraintTop_toBottomOf="@+id/fragLinear" />
+
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="395dp"
-            android:background="#ff8800"
+            android:background="#F00606"
             android:layout_height="382dp" android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@+id/btnSetting" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
