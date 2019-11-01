@@ -20,7 +20,7 @@ class LoginActivity : AppCompatActivity() {
       val fm=supportFragmentManager
         fm.beginTransaction().add(R.id.fragLinear,FragOne(),"frag_one").commit()
         btnGetPref.setOnClickListener {
-            var cd_firm = getPrefValue(this@LoginActivity, "CD_FIRM")
+            var cd_firm = getPrefValue(this@LoginActivity, "cd_key")
             var ip = getPrefValue(this@LoginActivity, "IP")
             Log.d("my_message", "cd_firm is $cd_firm and ip is $ip and sub1 is" )
         }

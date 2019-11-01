@@ -6,24 +6,24 @@
             android:enabled="true"
             android:key="Company"
             android:textColor="#FFF"
-            android:title="디폴트 설정">
+            android:title="Title you can write here that you want">
         <EditTextPreference
-                android:defaultValue="8001"
-                android:key="CD_FIRM"
+                android:defaultValue="2001"
+                android:key="cd_key"
                 android:maxLines="1"
                 android:selectAllOnFocus="true"
                 android:singleLine="true"
-                android:summary="회사코드를 설정합니다."
-                android:title="회사코드 설정"/>
+                android:summary="this is the summary"
+                android:title="this is the title"/>
 
         <EditTextPreference
-                android:defaultValue="192.168.0.10"
+                android:defaultValue="your sever ip "
                 android:key="IP"
                 android:maxLines="1"
                 android:selectAllOnFocus="true"
                 android:singleLine="true"
-                android:summary="회사 IP를 설정합니다."
-                android:title="IP설정"/>
+                android:summary="this is the summary"
+                android:title="this is the title "/>
 
 
     </PreferenceCategory>
